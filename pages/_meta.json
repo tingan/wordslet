@@ -1,0 +1,14 @@
+{
+  "index": "Introduction",
+  "menu": "Menu",
+  "create": "Create word book",
+  "learn": "Learn",
+  "quiz": "Quiz",
+  "errorbook": "Error book",
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "mailto:wordslet@gmail.com",
+    "newWindow": true
+  }
+}

@@ -1,0 +1,59 @@
+import Image from "next/image";
+
+# Create/Edit word book
+
+The following image shows the create and edit word book screen. To create a wordbook, users first click the drawer menu hamburger icon button to display the drawer menu and then click the create word book menu item. For edit an existing word book, users first go to home screen or word books list scree, find the word book and click "edit" button.
+
+{" "}
+
+<br />
+<Image
+  src="/assets/images/edit.png"
+  alt="wordslet app edit screen"
+  width={400}
+  height={300}
+/>
+
+Only title field is required for creating a word book. It means that you can create an empty word book and words later. The maximum words for a word book is limitd to 2000.
+
+Users can add words for word book in 3 ways.
+
+- Input "Term" and "Definition" in the create screen's term and definition text input box and then click add button (the plus icon button). Remember to click save button to save words into word book.
+- Click the import button (the database import icon button).
+
+  {" "}
+
+  <br />
+  <Image
+    src="/assets/images/import.png"
+    alt="wordslet app import screen"
+    width={400}
+    height={300}
+  />
+
+The format for input words or term, definition pair is one **comma separated** term, definition pair per line.
+
+```
+term1, definition1
+term2, definition2
+```
+
+As mobile is clumsy to input large text, **it's recommened to input the comma separated content in computer and then copy them to mobile** by other tools such as WhatsApp, Wechat, Dropbox or email etc.
+
+- Users can also input a URL whose content is above comma separated content. There are many way to get such URL, e.g. create a github repo and input formatted text as shown in following image, or use Dropbox or other internet disk such as Amazon S3 disk. The following image shows a github repo's dictionary content, click the "Raw" button will get the URL for importing.
+  {" "}
+
+  <br />
+  <Image
+    src="/assets/images/github.png"
+    alt="wordslet app github screen"
+    width={400}
+    height={300}
+  />
+
+  <br />
+  **Duplicate terms will be ignored during importing.** It's important to format
+  the content correctly, e.g. use comma to separate terma and definition, no extra
+  comma at the end of line, spaces around comma or term and definition is allowed.
+  The line which has format errors will be skipped, other correct lines will still
+  be imported.

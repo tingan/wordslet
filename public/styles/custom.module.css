@@ -1,0 +1,9 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-weight: bold;
+  margin-left: 6px;
+}

@@ -1,0 +1,32 @@
+import Image from "next/image";
+
+# Quiz
+
+The quiz screen show flashcards or carousel of questions. Users can toggle answer with definition or answer with term. Users can also configure interval of flashcard play and how many questions to generate. The maximum questions to generate for one session is limited to 100. The reason is that too many cards will deteriorate mobile performance. The default number of questions is 50. However, users can click shuffle button to generate more new questions.
+
+<br />
+<h2 className="label">Quiz screen in dark mode and chinese language</h2>
+<Image
+  src="/assets/images/quiz-dark.png"
+  alt="wordslet app quiz screen"
+  width={400}
+  height={300}
+/>
+<br />
+<h2 className="label"> Correct answer</h2>
+<Image
+  src="/assets/images/quiz-correct.png"
+  alt="wordslet app quiz correct answer screen"
+  width={400}
+  height={300}
+/>
+<br />
+<h2 className="label">Wrong answer</h2>
+<Image
+  src="/assets/images/quiz-wrong.png"
+  alt="wordslet app quiz wrong answer screen"
+  width={400}
+  height={300}
+/>
+
+When users answer wrongly, the term and definition will be added into error book list.
